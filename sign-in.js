@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (response.ok) {
                 return response.json();
             } else {
-                throw new Error('Invalid credentials');
+                alert('Invalid credentials');
             }
         })
         .then(data => {
